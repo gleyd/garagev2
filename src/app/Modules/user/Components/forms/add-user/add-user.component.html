@@ -1,3 +1,17 @@
-<p>
-  add-user works!
-</p>
+<form #userForm="ngForm" class="form">
+  <h4>Ajouter un client</h4>
+  <div class="form-group">
+    <input [(ngModel)]="user.lastName" name="lastName" type="text" required placeholder="Nom" class="form-control" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="user.firstName" name="firstName" type="text" required placeholder="Prénom" class="form-control" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="user.phone" name="phone" type="text" required placeholder="Téléphone" class="form-control" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="user.email" name="email" type="text" required placeholder="Email" class="form-control" />
+  </div>
+  <button [disabled]="!userForm.form.valid" (click)="createUser()" class="btn btn-primary">Ajouter un client</button>
+</form>
+<hr />

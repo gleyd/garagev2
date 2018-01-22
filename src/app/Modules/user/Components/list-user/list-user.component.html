@@ -1,3 +1,14 @@
-<p>
-  list-user works!
-</p>
+<div *ngFor="let user of userCollection;">
+  <div class="panel panel-default animated">
+    <div class="panel-heading">
+      <span class="text-left">{{ user.lastName }} {{ user.firstName }}</span>
+    </div>
+    <div class="panel-body">
+      <p>Téléphone : {{ user.phone}}</p>
+      <p>email : {{ user.email }}</p>
+    </div>
+    <div class="panel-default">
+      <p><a href="#">détail voiture</a></p>
+    </div>
+  </div>
+</div>
