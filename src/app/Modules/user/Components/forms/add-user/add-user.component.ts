@@ -10,20 +10,23 @@ import { UserService } from '../../../Services/user.service';
 export class AddUserComponent implements OnInit {
 
   private user: User;
-  private userService: UserService;
+  private UserService: UserService;
 
-  constructor(userService: UserService) {
-    this.resetUser();
+  constructor(UserService: UserService) {
+    
+    this.UserService = UserService;
+    this.initUser();
+
   }
 
-  resetUser() {
-    this.user = this.userService.createNewUser();
+  initUser() {
+    this.user = this.UserService.createNewUser();
   }
 
   
   createUser() {
 
-    this.userService.addUser(this.user);
+    this.UserService.addUser(this.user);
 
   }
 

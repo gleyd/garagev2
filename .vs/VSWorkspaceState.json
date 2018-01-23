@@ -1,0 +1,19 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\Modules",
+    "\\src\\app\\Modules\\car\\Components",
+    "\\src\\app\\Modules\\user",
+    "\\src\\app\\Modules\\user\\Components",
+    "\\src\\app\\Modules\\user\\Components\\forms",
+    "\\src\\app\\Modules\\user\\Components\\forms\\add-user",
+    "\\src\\app\\Modules\\user\\Components\\list-user",
+    "\\src\\app\\Modules\\user\\Components\\user",
+    "\\src\\app\\Modules\\user\\Models",
+    "\\src\\app\\Modules\\user\\Services"
+  ],
+  "SelectedNode": "\\src\\app\\Modules\\user\\Components\\forms\\add-user\\add-user.component.ts",
+  "PreviewInSolutionExplorer": false
+}

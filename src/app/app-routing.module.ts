@@ -1,7 +1,6 @@
 import { UserComponent } from "./Modules/user/Components/user/user.component";
-import { ModuleWithProviders } from "@angular/core";
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 
 
 const routes: Routes = [
@@ -11,3 +10,9 @@ const routes: Routes = [
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class TestaRoutingModule { }
