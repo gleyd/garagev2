@@ -1,9 +1,11 @@
 <div class="row">
   <div class="col-md-offset-1 col-md-10">
-    <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="form">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="form" novalidate>
       <h4>Ajouter un client</h4>
       <div class="form-group">
-        <input #lastName="ngModel" [(ngModel)]="user.lastName" name="lastName" type="text" required placeholder="Nom" class="form-control" />
+        <input #test #lastName="ngModel" [(ngModel)]="user.lastName" name="lastName" type="text" required placeholder="Nom" class="form-control" ValidateName />
+        {{lastName.errors | json}}
+
         <div [hidden]="lastName.valid || lastName.pristine"
              class="alert alert-danger">
           Un nom est requis.
