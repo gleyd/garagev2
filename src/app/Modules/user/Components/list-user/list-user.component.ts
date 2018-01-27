@@ -11,10 +11,10 @@ export class ListUserComponent implements OnInit {
 
 
   @Input() user: User;
-  listUsers: Array<User>;
+  users: Array<User>;
   constructor(UserService: UserService) {
 
-    this.listUsers = UserService.getAllUsers();
+    this.users = UserService.getAllUsers();
 
 
   }

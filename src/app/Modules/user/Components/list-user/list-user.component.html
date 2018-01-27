@@ -1,15 +1,19 @@
-<h2>List User</h2>
-<div *ngFor="let user of listUsers;">
-  <div class="panel panel-default animated">
-    <div class="panel-heading">
-      <span class="text-left">{{ user.lastName }} {{ user.firstName }}</span>
-    </div>
-    <div class="panel-body">
-      <p>Téléphone : {{ user.phone}}</p>
-      <p>email : {{ user.email }}</p>
-    </div>
-    <div class="panel-default">
-      <p><a href="#">détail voiture</a></p>
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    <h2>List User</h2>
+    <div *ngFor="let user of users;">
+      <div class="panel panel-default animated">
+        <div class="panel-heading">
+          <span class="text-left">{{ user.lastName }} {{ user.firstName }}</span>
+        </div>
+        <div class="panel-body">
+          <p>Téléphone : {{ user.phone}}</p>
+          <p>email : {{ user.email }}</p>
+        </div>
+        <div class="panel-default">
+          <p><a href="#">détail voiture</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

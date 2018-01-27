@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="form">
+      <h4>Ajouter un client</h4>
+      <div class="form-group">
+        <input #lastName="ngModel" [(ngModel)]="user.lastName" name="lastName" type="text" required placeholder="Nom" class="form-control" />
+        <div [hidden]="lastName.valid || lastName.pristine"
+             class="alert alert-danger">
+          Un nom est requis.
+        </div>
+      </div>
+      <div class="form-group">
+        <input #firstName="ngModel" [(ngModel)]="user.firstName" name="firstName" type="text" required placeholder="Prénom" class="form-control" />
+        <div [hidden]="firstName.valid || firstName.pristine"
+             class="alert alert-danger">
+          Un prénom est requis.
+        </div>
+      </div>
+      <div class="form-group">
+        <input #phone="ngModel" [(ngModel)]="user.phone" name="phone" type="text" required placeholder="Téléphone" class="form-control" />
+        <div [hidden]="phone.valid || phone.pristine"
+             class="alert alert-danger">
+          Un numéro de téléphone est requis.
+        </div>
+      </div>
+      <div class="form-group">
+        <input #email="ngModel" [(ngModel)]="user.email" name="email" type="text" required placeholder="Email" class="form-control" />
+        <div [hidden]="email.valid || email.pristine"
+             class="alert alert-danger">
+          Un email est requis.
+        </div>
+      </div>
+      <button [disabled]="!userForm.form.valid" (click)="createUser()" class="btn btn-primary">Ajouter un client</button>
+    </form>
+    <hr />
+  </div>
+</div>
