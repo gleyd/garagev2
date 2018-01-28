@@ -9,8 +9,8 @@
     "\\src\\app\\Modules\\user\\Components",
     "\\src\\app\\Modules\\user\\Components\\add-user",
     "\\src\\app\\Modules\\user\\Components\\list-user",
-    "\\src\\app\\Modules\\user\\Components\\user"
+    "\\src\\app\\Modules\\user\\Directives"
   ],
-  "SelectedNode": "\\src\\app\\Modules\\user\\Components\\add-user\\add-user.component.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
