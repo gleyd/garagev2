@@ -12,24 +12,24 @@
         </div>
       </div>
       <div class="form-group">
-        <input #firstName="ngModel" [(ngModel)]="user.firstName" name="firstName" type="text" required placeholder="Prénom" class="form-control" />
+        <input #firstName="ngModel" [(ngModel)]="user.firstName" name="firstName" type="text" required placeholder="Prénom" class="form-control" ValidateName/>
         <div [hidden]="firstName.valid || firstName.pristine"
              class="alert alert-danger">
           Un prénom est requis.
         </div>
       </div>
       <div class="form-group">
-        <input #phone="ngModel" [(ngModel)]="user.phone" name="phone" type="text" required placeholder="Téléphone" class="form-control" />
+        <input #phone="ngModel" [(ngModel)]="user.phone" name="phone" type="text" required placeholder="Téléphone" class="form-control"  ValidatePhone/>
         <div [hidden]="phone.valid || phone.pristine"
              class="alert alert-danger">
-          Un numéro de téléphone est requis.
+          Un numéro de téléphone est requis.{{phone.errors | json}}
         </div>
       </div>
       <div class="form-group">
-        <input #email="ngModel" [(ngModel)]="user.email" name="email" type="text" required placeholder="Email" class="form-control" />
+        <input #email="ngModel" [(ngModel)]="user.email" name="email" type="text" required placeholder="Email" class="form-control" ValidateEmail/>
         <div [hidden]="email.valid || email.pristine"
              class="alert alert-danger">
-          Un email est requis.
+          Un email est requis.{{email.errors | json}}
         </div>
       </div>
       <button [disabled]="!userForm.form.valid" (click)="createUser()" class="btn btn-primary">Ajouter un client</button>
