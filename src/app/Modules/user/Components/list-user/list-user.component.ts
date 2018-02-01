@@ -14,7 +14,7 @@ export class ListUserComponent implements OnInit {
   users: Array<User>;
   constructor(UserService: UserService) {
 
-    this.users = UserService.getAllUsers();
+    this.users = UserService.getAll();
 
 
   }

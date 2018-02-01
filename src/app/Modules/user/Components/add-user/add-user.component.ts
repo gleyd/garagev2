@@ -27,7 +27,7 @@ export class AddUserComponent implements OnInit {
   
   createUser() {
 
-    this.UserService.addUser(this.user);
+    this.UserService.add(this.user);
 
   }
 

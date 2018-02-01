@@ -4,7 +4,7 @@
       <h4>Ajouter un client</h4>
       <div class="form-group">
         <input #test #lastName="ngModel" [(ngModel)]="user.lastName" name="lastName" type="text" required placeholder="Nom" class="form-control" ValidateName />
-        {{lastName.errors | json}}
+        
 
         <div [hidden]="lastName.valid || lastName.pristine"
              class="alert alert-danger">
@@ -22,7 +22,7 @@
         <input #phone="ngModel" [(ngModel)]="user.phone" name="phone" type="text" required placeholder="Téléphone" class="form-control"  ValidatePhone/>
         <div [hidden]="phone.valid || phone.pristine"
              class="alert alert-danger">
-          Un numéro de téléphone est requis.{{phone.errors | json}}
+          Un numéro de téléphone est requis.
         </div>
       </div>
       <div class="form-group">

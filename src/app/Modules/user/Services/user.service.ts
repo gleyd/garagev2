@@ -10,14 +10,14 @@ export class UserService {
   constructor() {
 
     this.listUsers = [];
-    this.getAllUsers();
+    this.getAll();
 
   }
 
   /**
    * 
    */
-  public getAllUsers(): Array<User> {
+  public getAll(): Array<User> {
     return this.listUsers = [new User(1, "jean", "torres", "06855542", "torres@gmail.com"),
     new User(2, "jean", "torres", "06855542", "torres@gmail.com"),
     new User(3, "jean", "torres", "06855542", "torres@gmail.com")];
@@ -28,7 +28,7 @@ export class UserService {
   /**
    * 
    */
-  public addUser(user: User): any {
+  public add(user: User): any {
     this.listUsers.unshift(user);
 
   }

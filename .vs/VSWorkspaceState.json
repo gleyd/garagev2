@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\Components",
     "\\src\\app\\Modules",
-    "\\src\\app\\Modules\\user",
+    "\\src\\app\\Modules\\car\\Components\\list-car",
+    "\\src\\app\\Modules\\car\\Models",
     "\\src\\app\\Modules\\user\\Components",
     "\\src\\app\\Modules\\user\\Components\\add-user",
     "\\src\\app\\Modules\\user\\Components\\list-user",
-    "\\src\\app\\Modules\\user\\Directives"
+    "\\src\\app\\Modules\\user\\Services"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\Modules\\user",
   "PreviewInSolutionExplorer": false
 }
