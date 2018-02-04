@@ -3,7 +3,7 @@ export class User {
 
 
 
-  constructor(public id: number, public firstName: string, public lastName: string, public phone?: string, public email?: string) {
+  constructor(private id: number, private firstName: string, private lastName: string, private phone?: string, private email?: string) {
 
   }
 

@@ -1,0 +1,29 @@
+<p>
+  list-work works!
+</p>
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    <h2>List User</h2>
+    <div >
+      <table class="table table-bordered">
+        <thead class="panel panel-default animated">
+          <tr class="panel-heading">
+            <td>Client : jean</td>
+            <td>Téléphone : 062554455</td>
+            <td colspan="3">email : zkde.dz@gmail.com</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let work of works;">
+            <td>{{ work.kilometer }}</td>
+            <td>{{ work.stateWork }}</td>
+            <td>{{ work.workForcePrice }}</td>
+            <td>{{ work.Title }}</td>
+            <td><a href="#">dance</a></td>
+          </tr>
+       
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
